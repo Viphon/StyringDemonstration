@@ -1,0 +1,100 @@
+<html>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+table {
+align:middle;
+display:inline-block;
+margin:auto;
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 500px;
+}
+
+td, th {
+    border: 0px solid #dddddd;
+    text-align: right;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+.figure {
+   margin: 0px;
+   padding: 0px;
+   height: 300px;
+}   
+.divcl {
+    clear: right;
+}
+</style>
+<head>
+<script src="Rfig.js"></script>
+<script src="Events/Event1/Vplot1.js"></script>
+<script src="Events/Event1/Qplot1.js"></script>
+<script src="Events/Event2/Vplot2.js"></script>
+<script src="Events/Event2/Qplot2.js"></script>
+<script src="Events/Event3/Vplot3.js"></script>
+<script src="Events/Event3/Qplot3.js"></script>
+<script src="Events/Event4/Vplot4.js"></script>
+<script src="Events/Event4/Qplot4.js"></script>
+<script src="Events/Event5/Vplot5.js"></script>
+<script src="Events/Event5/Qplot5.js"></script>
+<script src="Events/Event6/Vplot6.js"></script>
+<script src="Events/Event6/Qplot6.js"></script>
+<script src="Events/Event7/Vplot7.js"></script>
+<script src="Events/Event7/Qplot7.js"></script>
+<script src="Events/Event8/Vplot8.js"></script>
+<script src="Events/Event8/Qplot8.js"></script>
+<script src="Events/Event9/Vplot9.js"></script>
+<script src="Events/Event9/Qplot9.js"></script>
+<script src="Events/Event10/Vplot10.js"></script>
+<script src="Events/Event10/Qplot10.js"></script>
+<script src="Events/Event11/Vplot11.js"></script>
+<script src="Events/Event11/Qplot11.js"></script>
+<script src="Events/Event12/Vplot12.js"></script>
+<script src="Events/Event12/Qplot12.js"></script>
+<script src="Events/Event13/Vplot13.js"></script>
+<script src="Events/Event13/Qplot13.js"></script>
+<script src="Events/Event14/Vplot14.js"></script>
+<script src="Events/Event14/Qplot14.js"></script>
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<script src="ButtonFunction.js"></script>
+</head>
+<body>
+<div style="height:450;text-align:center;">
+<table>
+<tr><th></th><th>Dato</th><th>Akkumuleret nedbør</th><th>Varighed</th></tr>
+<tr><th><button onclick="button1()" class="w3-button w3-gray">Vis regn</button></th><th>06/08-2012</th><th>37 mm</th><th>4 timer</th></tr>
+<tr><th><button onclick="button2()" class="w3-button w3-gray">Vis regn</button></th><th>08/06-2011</th><th>35 mm</th><th>7 timer</th></tr>
+<tr><th><button onclick="button3()" class="w3-button w3-gray">Vis regn</button></th><th>15/10-2014</th><th>32 mm</th><th>10 timer</th></tr>
+<tr><th><button onclick="button4()" class="w3-button w3-gray">Vis regn</button></th><th>25/07-2015</th><th>32 mm</th><th>10 timer</th></tr>
+<tr><th><button onclick="button5()" class="w3-button w3-gray">Vis regn</button></th><th>23/10-2010</th><th>32 mm</th><th>27 timer</th></tr>
+<tr><th><button onclick="button6()" class="w3-button w3-gray">Vis regn</button></th><th>09/09-2013</th><th>27 mm</th><th>9 timer</th></tr>
+<tr><th><button onclick="button7()" class="w3-button w3-gray">Vis regn</button></th><th>31/07-2011</th><th>26 mm</th><th>2 timer</th></tr>
+<tr><th><button onclick="reset()" class="w3-button w3-gray">Vis 2015</button></th><th></th><th></th><th></th></tr>
+</table>
+<table>
+<tr><th></th><th>Dato</th><th>Akkumuleret nedbør</th><th>Varighed</th></tr>
+<tr><th><button onclick="button8()" class="w3-button w3-gray">Vis regn</button></th><th>30/06-2011</th><th>26 mm</th><th>6 timer</th></tr>
+<tr><th><button onclick="button9()" class="w3-button w3-gray">Vis regn</button></th><th>23/05-2014</th><th>24 mm</th><th>3 timer</th></tr>
+<tr><th><button onclick="button10()" class="w3-button w3-gray">Vis regn</button></th><th>14/07-2011</th><th>24 mm</th><th>11 timer</th></tr>
+<tr><th><button onclick="button11()" class="w3-button w3-gray">Vis regn</button></th><th>22/05-2013</th><th>24 mm</th><th>13 timer</th></tr>
+<tr><th><button onclick="button12()" class="w3-button w3-gray">Vis regn</button></th><th>05/10-2011</th><th>23 mm</th><th>10 timer</th></tr>
+<tr><th><button onclick="button13()" class="w3-button w3-gray">Vis regn</button></th><th>30/05-2010</th><th>22 mm</th><th>11 timer</th></tr>
+<tr><th><button onclick="button14()" class="w3-button w3-gray">Vis regn</button></th><th>15/10-2014</th><th>22 mm</th><th>11 timer</th></tr>
+<tr><th><button onclick="reset()" class="w3-button w3-gray">Vis 2015</button></th><th></th><th></th><th></th></tr>
+</table>
+</div>
+<div class="divcl"></div>
+<div style="text-align:center;">
+<div id="RplotGraphDiv" style="height: 350px;width: 500px; display:inline-block;"></div>  
+</div>
+<div style="text-align:center;">
+<div id="VplotGraphDiv" style="height: 350px;width: 500px; display:inline-block;"></div>
+<div id="QplotGraphDiv" style="height: 350px;width: 500px; display:inline-block;"></div>
+</div>
+</html>
+</body>
+<script src="ButtonJS.js"></script>
+<script>Rfig();</script>

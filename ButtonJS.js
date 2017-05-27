@@ -1,11 +1,15 @@
-function reset(){	var update = {		'xaxis.range': [1421046720000,1451267520000],	};	Plotly.relayout(graphDiv, update)}
-function button1(){	var update = {		'xaxis.range': [1437818100000,1437854520000],	};	Plotly.relayout(graphDiv, update)}
-function button2(){	var update = {		'xaxis.range': [1441458540000,1441491720000],	};	Plotly.relayout(graphDiv, update)}
-function button3(){	var update = {		'xaxis.range': [1441057620000,1441105800000],	};	Plotly.relayout(graphDiv, update)}
-function button4(){	var update = {		'xaxis.range': [1439678160000,1439698380000],	};	Plotly.relayout(graphDiv, update)}
-function button5(){	var update = {		'xaxis.range': [1438067700000,1438088520000],	};	Plotly.relayout(graphDiv, update)}
-function button6(){	var update = {		'xaxis.range': [1434542880000,1434572520000],	};	Plotly.relayout(graphDiv, update)}
-function button7(){	var update = {		'xaxis.range': [1438722480000,1438739700000],	};	Plotly.relayout(graphDiv, update)}
-function button8(){	var update = {		'xaxis.range': [1442267940000,1442284860000],	};	Plotly.relayout(graphDiv, update)}
-function button9(){	var update = {		'xaxis.range': [1442547180000,1442560980000],	};	Plotly.relayout(graphDiv, update)}
-function button10(){	var update = {		'xaxis.range': [1433270280000,1433286360000],	};	Plotly.relayout(graphDiv, update)}
+function reset(){	chooseRainEvent(0);}
+function button1(){	chooseRainEvent(1);}
+function button2(){	chooseRainEvent(2);}
+function button3(){	chooseRainEvent(3);}
+function button4(){	chooseRainEvent(4);}
+function button5(){	chooseRainEvent(5);}
+function button6(){	chooseRainEvent(6);}
+function button7(){	chooseRainEvent(7);}
+function button8(){	chooseRainEvent(8);}
+function button9(){	chooseRainEvent(9);}
+function button10(){	chooseRainEvent(10);}
+function button11(){	chooseRainEvent(11);}
+function button12(){	chooseRainEvent(12);}
+function button13(){	chooseRainEvent(13);}
+function button14(){	chooseRainEvent(14);}
